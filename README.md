@@ -40,3 +40,19 @@ This system dynamically monitors tank water levels across sequential states (Low
 ---
 
 ## ⚙️ Circuit Logic & Working Principle
+💧 Water Level Sensors
+       │
+       ▼
+🔄 Demux & Selection Line (Driven by D Flip-Flops)
+       │
+       ▼
+⚙️ Combinational Logic & K-Maps (74HC11 AND Gates)
+       │
+       ├───────────────────────────────────────┐
+       ▼                                       ▼
+🔌 BC547 Transistor Switches             🛑 NOR Gate Auto Interlock
+       │                                 (Shuts down system at max state)
+ ┌─────┼─────┐
+ ▼     ▼     ▼
+🟢     🟡    🔴 + 🔔
+Low   Mid    High + Buzzer
