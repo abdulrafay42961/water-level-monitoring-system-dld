@@ -26,9 +26,26 @@ This system dynamically monitors tank water levels across sequential states (Low
 | **Inputs & Controls** | Push Button & Clock Generator | Global circuit reset & clock pulse drive |
 
 ---
+## 📂 Repository Files
+* 📄 `OOP2main.cpp` — Main Application Execution & Control Loop
+* 📄 `OOP2.cpp` — Class Member Function Implementations
+* 📄 `OOP2.h` — Core Class Declarations & Header Specifications
+* 📄 `OOP project Report.docx` — Complete Documentation, UML Diagrams & Testing Screenshots
+* 📄 `OOP project diagram.drawio` — Editable UML Class Diagram Source
+* 📁 `*.txt` — Dynamic File Stream Databases (Teams, Tournaments, Logs & Credentials)
 
+---
+
+## 🚀 How to Build & Run
+
+1. **Clone the Repository:**
+   ```bash
+   git clone [https://github.com/abdulrafay42961/esports-tournament-management-cpp.git](https://github.com/abdulrafay42961/esports-tournament-management-cpp.git)
 ## ⚙️ Circuit Logic & Working Principle
-
+Compile using G++:
+g++ OOP2main.cpp OOP2.cpp -o esports_app
+Run Application:
+./esports_app
 ```text
 💧 Water Level Sensors
        │
@@ -46,3 +63,4 @@ This system dynamically monitors tank water levels across sequential states (Low
  ▼     ▼     ▼
 🟢     🟡    🔴 + 🔔
 Low   Mid    High + Buzzer
+
