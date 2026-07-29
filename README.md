@@ -14,18 +14,6 @@ This system dynamically monitors tank water levels across sequential states (Low
 
 ---
 
-## 🖼️ Circuit Simulations & Architecture
-
-### Tinkercad Breadboard Implementation
-![Tinkercad Circuit Diagram](./Water%20Level%20Monitoring%20System%20Tinkercad.jpg)
-
-### Key Circuit Highlights (Logisim Schematics)
-* **Counter Selection Line:** D Flip-Flop counter logic paired with XOR gates to drive a 1-to-4 Demultiplexer for automatic input state cycling.
-* **Combinational Logic:** Integrated 74HC11 (3-input AND gates) to verify simultaneous activation of all level sensors prior to activating the overflow warning.
-* **Global Reset & Enabler:** Manual push-button reset line integrated across all output D Flip-Flops.
-
----
-
 ## 🛠️ Hardware & Components Breakdown
 
 | Component Category | Component Name / IC | Quantity / Description |
@@ -40,6 +28,8 @@ This system dynamically monitors tank water levels across sequential states (Low
 ---
 
 ## ⚙️ Circuit Logic & Working Principle
+
+```text
 💧 Water Level Sensors
        │
        ▼
